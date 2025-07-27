@@ -18,9 +18,19 @@
     }
   </style>
   <script type="module">
+    // CÍRCULO 1: LA VISTA (El cliente en el restaurante)
+    // Esto que ves aquí es la VISTA. Es lo que el usuario final ve y con lo que interactúa.
+    // Piensa en esto como el CLIENTE en un restaurante. El cliente no sabe cómo se cocina,
+    // solo ve el menú (la interfaz de usuario) y hace un pedido.
+
+    // "Quiero ver el menú de películas"
+    // Aquí, el cliente (la vista) está haciendo una petición (un "pedido") a la cocina (el backend).
+    // La URL 'http://localhost:1234/movies' es como la dirección de la cocina.
+    // El método `fetch` es como llamar al camarero para que tome el pedido.
     fetch('http://localhost:1234/movies')
-      .then(res => res.json())
+      .then(res => res.json()) // El camarero trae la respuesta en un formato que el cliente entiende (JSON).
       .then(movies => {
+        // Una vez que el cliente recibe el menú (los datos de las películas), decide cómo mostrarlos.
         const html = movies.map(movie => {
           return `
             <article data-id="${movie.id}">
@@ -33,18 +43,25 @@
           `
         }).join('')
 
+        // Aquí se muestra el menú de películas en la mesa del cliente (en la página web).
         document.querySelector('main').innerHTML = html
 
+        // Ahora, el cliente puede interactuar con el menú, por ejemplo, eliminar una película.
         document.addEventListener('click', e => {
           if (e.target.matches('button')) {
             const article = e.target.closest('article')
             const id = article.dataset.id
 
+            // "Quiero eliminar esta película"
+            // El cliente hace otro pedido, esta vez para eliminar una película específica.
+            // De nuevo, llama al camarero (`fetch`) y le da la orden.
             fetch(`http://localhost:1234/movies/${id}`, {
-              method: 'DELETE'
+              method: 'DELETE' // Le especifica al camarero que la acción es "DELETE" (eliminar).
             })
               .then(res => {
+                // Si el camarero confirma que el plato fue eliminado de la cocina...
                 if (res.ok) {
+                  // ...el cliente lo quita de su vista (de la página).
                   article.remove()
                 }
               })
@@ -55,6 +72,7 @@
   </script>
 </head>
 <body>
+  <!-- La "mesa" del cliente donde se mostrará el menú de películas. -->
   <main></main>
 </body>
 </html>
