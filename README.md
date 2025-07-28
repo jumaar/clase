@@ -23,6 +23,35 @@ El corazón de este proyecto es la inyección de dependencias. En lugar de que e
 
 Cada uno de estos archivos importa un modelo diferente y se lo pasa a la aplicación principal. Esto nos permite cambiar de base de datos con solo ejecutar un archivo diferente, sin tener que modificar el código del controlador.
 
+## Línea de Estudio Recomendada
+
+Para entender el flujo completo de una petición en la aplicación, te recomendamos seguir esta "Línea de Estudio". Busca los comentarios `LÍNEA DE SEGUIMIENTO` en los archivos, que te guiarán paso a paso.
+
+El flujo se entiende mejor siguiendo este orden:
+
+1.  **`server-with-local.js` (El Punto de Partida)**
+    *   **Qué observar:** Cómo se importa el modelo (`MovieModel`) y la función `createApp`. Fíjate en cómo se "inyecta" el modelo en la aplicación. Este es el núcleo de la inyección de dependencias.
+
+2.  **`app.js` (El Ensamblador de la Aplicación)**
+    *   **Qué observar:** Cómo la función `createApp` recibe el modelo. Fíjate en el orden de los middlewares: primero los que procesan la petición (`cors`, `json`) y al final del todo, el middleware de manejo de errores.
+
+3.  **`routes/movies.js` (El Enrutador)**
+    *   **Qué observar:** Cómo la función `createMovieRouter` recibe el modelo y crea una instancia del `MovieController`, pasándole el modelo. Aquí es donde se conectan las rutas (ej. `GET /movies`) con los métodos específicos del controlador.
+
+4.  **`controllers/movies.js` (El Controlador)**
+    *   **Qué observar:** Cómo el constructor recibe y almacena el modelo. Fíjate en que los métodos (`getAll`, `getById`, etc.) usan `this.movieModel` para acceder a los datos, sin saber de dónde vienen.
+
+5.  **`models/local-file-system/movie.js` (El Modelo)**
+    *   **Qué observar:** La implementación concreta de los métodos de acceso a datos. Este archivo sabe cómo leer y escribir en un `json`. Compara este archivo con `models/mysql/movie.js` o `models/mongodb/movie.js` para ver cómo la misma interfaz se implementa de formas completamente diferentes.
+
+6.  **`middlewares/cors.js` y `middlewares/error.js` (Los Ayudantes)**
+    *   **Qué observar:** Entiende cómo estos middlewares se insertan en el flujo de la petición para manejar tareas transversales (CORS, manejo de errores) antes y después de que la lógica principal sea ejecutada por el controlador.
+
+7.  **`test/movies.test.js` (El Verificador)**
+    *   **Qué observar:** Cómo las pruebas unitarias importan `createApp` y le inyectan un modelo de prueba (el local) para verificar el comportamiento de la API de forma aislada, sin depender de bases de datos externas.
+
+Siguiendo este orden, tendrás una visión completa y estructurada de cómo todas las piezas del rompecabezas encajan.
+
 ## Cómo Empezar
 
 ### Prerrequisitos
