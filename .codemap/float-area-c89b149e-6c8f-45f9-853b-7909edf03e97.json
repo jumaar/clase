@@ -1,0 +1,1063 @@
+{
+    "type": "float-area",
+    "_widgets": [
+        [
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "schemas\\movies.js",
+                            "floatAreaId": "c89b149e-6c8f-45f9-853b-7909edf03e97"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 31,
+                                    "column": 1
+                                },
+                                "position": {
+                                    "lineNumber": 31,
+                                    "column": 1
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 19,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": -11
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 31,
+                                "provider": "syntax",
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 600,
+                "height": 450,
+                "spacing": 0
+            }
+        ],
+        [
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "routes\\movies.js",
+                            "floatAreaId": "c89b149e-6c8f-45f9-853b-7909edf03e97"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": true,
+                                "selectionStart": {
+                                    "lineNumber": 16,
+                                    "column": 3
+                                },
+                                "position": {
+                                    "lineNumber": 16,
+                                    "column": 15
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 5,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": -8
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 29,
+                                "provider": "syntax",
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": true
+                        }
+                    }
+                },
+                "width": 600,
+                "height": 450,
+                "spacing": 0
+            },
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "controllers\\movies.js",
+                            "floatAreaId": "c89b149e-6c8f-45f9-853b-7909edf03e97"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 37,
+                                    "column": 52
+                                },
+                                "position": {
+                                    "lineNumber": 37,
+                                    "column": 52
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 22,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": -15
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 89,
+                                "provider": "syntax",
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 600,
+                "height": 450,
+                "spacing": 0
+            },
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "middlewares\\cors.js",
+                            "floatAreaId": "c89b149e-6c8f-45f9-853b-7909edf03e97"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 8,
+                                    "column": 21
+                                },
+                                "position": {
+                                    "lineNumber": 8,
+                                    "column": 21
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 1,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": 0
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 21,
+                                "provider": "syntax",
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 600,
+                "height": 450,
+                "spacing": 0
+            },
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "middlewares\\error.js",
+                            "floatAreaId": "c89b149e-6c8f-45f9-853b-7909edf03e97"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": true,
+                                "selectionStart": {
+                                    "lineNumber": 7,
+                                    "column": 14
+                                },
+                                "position": {
+                                    "lineNumber": 7,
+                                    "column": 29
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 1,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": 0
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 27,
+                                "provider": "syntax",
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 600,
+                "height": 450,
+                "spacing": 0
+            }
+        ],
+        [
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "server-with-mysql.js",
+                            "floatAreaId": "c89b149e-6c8f-45f9-853b-7909edf03e97"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 4,
+                                    "column": 31
+                                },
+                                "position": {
+                                    "lineNumber": 4,
+                                    "column": 31
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 1,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": 0
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 11,
+                                "provider": "syntax",
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 600,
+                "height": 450,
+                "spacing": 0
+            },
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "app.js",
+                            "floatAreaId": "c89b149e-6c8f-45f9-853b-7909edf03e97"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 12,
+                                    "column": 46
+                                },
+                                "position": {
+                                    "lineNumber": 12,
+                                    "column": 46
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 1,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": 0
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 21,
+                                "provider": "syntax",
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 600,
+                "height": 450,
+                "spacing": 0
+            }
+        ],
+        [
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "models\\mysql\\movie.js",
+                            "floatAreaId": "c89b149e-6c8f-45f9-853b-7909edf03e97"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 59,
+                                    "column": 27
+                                },
+                                "position": {
+                                    "lineNumber": 59,
+                                    "column": 27
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 1,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": 0
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 174,
+                                "provider": "syntax",
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": true
+                        }
+                    }
+                },
+                "width": 600,
+                "height": 450,
+                "spacing": 0
+            }
+        ],
+        [
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "database\\mysql-schema.sql",
+                            "floatAreaId": "c89b149e-6c8f-45f9-853b-7909edf03e97"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 15,
+                                    "column": 21
+                                },
+                                "position": {
+                                    "lineNumber": 15,
+                                    "column": 21
+                                }
+                            },
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 14,
+                                    "column": 33
+                                },
+                                "position": {
+                                    "lineNumber": 14,
+                                    "column": 33
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 1,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": -13
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 75,
+                                "provider": "syntax",
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 600,
+                "height": 450,
+                "spacing": 0
+            }
+        ]
+    ],
+    "_widths": [
+        600,
+        600,
+        600,
+        600,
+        600
+    ],
+    "_modelData": {
+        "connections": [
+            {
+                "startWord": {
+                    "uri": "models\\mysql\\movie.js",
+                    "word": "MovieModel",
+                    "lineNumber": 19,
+                    "startColumn": 14,
+                    "endLineNumber": 19,
+                    "endColumn": 24,
+                    "x": 2162,
+                    "y": 403.9999969482422,
+                    "width": 77,
+                    "height": 19,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "server-with-mysql.js",
+                    "lineNumber": 2,
+                    "startColumn": 10,
+                    "endLineNumber": 2,
+                    "endColumn": 20,
+                    "word": "MovieModel",
+                    "x": 1474.999931640625,
+                    "y": 80.99999694824217,
+                    "hide": false,
+                    "height": 19,
+                    "width": 77
+                },
+                "id": "9f290fdf-ddb7-44c4-9e18-07f632a44889",
+                "startAnchor": {
+                    "x": 2180.294115636489,
+                    "y": 403.9999969482422
+                },
+                "endAnchor": {
+                    "x": 1533.7058160041358,
+                    "y": 99.99999694824217
+                },
+                "startControl": {
+                    "x": 2180.294115636489,
+                    "y": 390.3846438399451
+                },
+                "endControl": {
+                    "x": 1533.7058160041358,
+                    "y": 118.72110747215063
+                },
+                "arrow": {
+                    "angle": -1.5707963267948966,
+                    "x": 1533.7058160041358,
+                    "y": 111.99999694824217
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "routes\\movies.js",
+                    "word": "createMovieRouter",
+                    "lineNumber": 9,
+                    "startColumn": 14,
+                    "endLineNumber": 9,
+                    "endColumn": 31,
+                    "x": 850.0000214843749,
+                    "y": 130.00000244140625,
+                    "width": 131,
+                    "height": 19,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "app.js",
+                    "lineNumber": 2,
+                    "startColumn": 10,
+                    "endLineNumber": 2,
+                    "endColumn": 27,
+                    "word": "createMovieRouter",
+                    "x": 1474.999931640625,
+                    "y": 586.9999755859375,
+                    "hide": false,
+                    "height": 19,
+                    "width": 131
+                },
+                "id": "d7530104-12c6-4591-b48a-5cc1f571c418",
+                "startAnchor": {
+                    "x": 928.4923617368908,
+                    "y": 149.00000244140625
+                },
+                "endAnchor": {
+                    "x": 1527.507591388109,
+                    "y": 586.9999755859375
+                },
+                "startControl": {
+                    "x": 928.4923617368908,
+                    "y": 167.88778726620887
+                },
+                "endControl": {
+                    "x": 1527.507591388109,
+                    "y": 561.0292714518339
+                },
+                "arrow": {
+                    "angle": 1.5707963267948966,
+                    "x": 1527.507591388109,
+                    "y": 574.9999755859375
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "middlewares\\error.js",
+                    "word": "errorMiddleware",
+                    "lineNumber": 7,
+                    "startColumn": 14,
+                    "endLineNumber": 7,
+                    "endColumn": 29,
+                    "x": 849.9999951171874,
+                    "y": 1693.9999218749997,
+                    "width": 116,
+                    "height": 19,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "app.js",
+                    "lineNumber": 4,
+                    "startColumn": 10,
+                    "endLineNumber": 4,
+                    "endColumn": 25,
+                    "word": "errorMiddleware",
+                    "x": 1474.999931640625,
+                    "y": 624.9999755859375,
+                    "hide": false,
+                    "height": 19,
+                    "width": 116
+                },
+                "id": "602b48ee-db99-41be-81c7-2862a46f4f68",
+                "startAnchor": {
+                    "x": 913.5542511464643,
+                    "y": 1693.9999218749997
+                },
+                "endAnchor": {
+                    "x": 1527.4456756113482,
+                    "y": 643.9999755859375
+                },
+                "startControl": {
+                    "x": 913.5542511464643,
+                    "y": 1666.374943780336
+                },
+                "endControl": {
+                    "x": 1527.4456756113482,
+                    "y": 681.9843204661
+                },
+                "arrow": {
+                    "angle": -1.5707963267948966,
+                    "x": 1527.4456756113482,
+                    "y": 655.9999755859375
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "middlewares\\cors.js",
+                    "word": "corsMiddleware",
+                    "lineNumber": 8,
+                    "startColumn": 14,
+                    "endLineNumber": 8,
+                    "endColumn": 28,
+                    "x": 849.9999951171874,
+                    "y": 1206.999970703125,
+                    "width": 108,
+                    "height": 19,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "app.js",
+                    "lineNumber": 3,
+                    "startColumn": 10,
+                    "endLineNumber": 3,
+                    "endColumn": 24,
+                    "word": "corsMiddleware",
+                    "x": 1474.999931640625,
+                    "y": 605.9999755859375,
+                    "hide": false,
+                    "height": 19,
+                    "width": 108
+                },
+                "id": "4bff498a-faaa-4dc0-a4da-45e7eb0460c9",
+                "startAnchor": {
+                    "x": 913.8793619145447,
+                    "y": 1206.999970703125
+                },
+                "endAnchor": {
+                    "x": 1519.1205648432676,
+                    "y": 624.9999755859375
+                },
+                "startControl": {
+                    "x": 913.8793619145447,
+                    "y": 1184.8197531745893
+                },
+                "endControl": {
+                    "x": 1519.1205648432676,
+                    "y": 655.4977746876741
+                },
+                "arrow": {
+                    "angle": -1.5707963267948966,
+                    "x": 1519.1205648432676,
+                    "y": 636.9999755859375
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "schemas\\movies.js",
+                    "word": "validateMovie",
+                    "lineNumber": 24,
+                    "startColumn": 17,
+                    "endLineNumber": 24,
+                    "endColumn": 30,
+                    "x": 216.99999926757812,
+                    "y": 146.00000244140625,
+                    "width": 100,
+                    "height": 19,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "controllers\\movies.js",
+                    "lineNumber": 13,
+                    "startColumn": 10,
+                    "endLineNumber": 13,
+                    "endColumn": 23,
+                    "word": "validateMovie",
+                    "x": 750.0000214843749,
+                    "y": 568.0000019531249,
+                    "hide": true,
+                    "height": 1,
+                    "width": 1
+                },
+                "id": "866042a9-846d-4591-81c8-14d5c141e40d",
+                "startAnchor": {
+                    "x": 278.12167049394634,
+                    "y": 165.00000244140625
+                },
+                "endAnchor": {
+                    "x": 750.0000214843749,
+                    "y": 568.0729078677739
+                },
+                "startControl": {
+                    "x": 278.12167049394634,
+                    "y": 185.78385215850165
+                },
+                "endControl": {
+                    "x": 716.5439349437223,
+                    "y": 568.0729078677739
+                },
+                "arrow": {
+                    "angle": 0,
+                    "x": 738.0000214843749,
+                    "y": 568.0729078677739
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "schemas\\movies.js",
+                    "word": "validatePartialMovie",
+                    "lineNumber": 28,
+                    "startColumn": 17,
+                    "endLineNumber": 28,
+                    "endColumn": 37,
+                    "x": 216.99999926757812,
+                    "y": 222.00000244140625,
+                    "width": 154,
+                    "height": 19,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "controllers\\movies.js",
+                    "lineNumber": 13,
+                    "startColumn": 25,
+                    "endLineNumber": 13,
+                    "endColumn": 45,
+                    "word": "validatePartialMovie",
+                    "x": 750.0000214843749,
+                    "y": 568.0000019531249,
+                    "hide": true,
+                    "height": 1,
+                    "width": 1
+                },
+                "id": "8a20ac59-ead6-4945-9257-60ebc64f1050",
+                "startAnchor": {
+                    "x": 306.868694274531,
+                    "y": 241.00000244140625
+                },
+                "endAnchor": {
+                    "x": 750.0000214843749,
+                    "y": 568.1308891567276
+                },
+                "startControl": {
+                    "x": 306.868694274531,
+                    "y": 260.00544831225056
+                },
+                "endControl": {
+                    "x": 714.6009668763023,
+                    "y": 568.1308891567276
+                },
+                "arrow": {
+                    "angle": 0,
+                    "x": 738.0000214843749,
+                    "y": 568.1308891567276
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "controllers\\movies.js",
+                    "word": "MovieController",
+                    "lineNumber": 22,
+                    "startColumn": 14,
+                    "endLineNumber": 22,
+                    "endColumn": 29,
+                    "x": 850.0000214843749,
+                    "y": 553.0000019531249,
+                    "width": 116,
+                    "height": 19,
+                    "hide": true
+                },
+                "endWord": {
+                    "uri": "routes\\movies.js",
+                    "lineNumber": 2,
+                    "startColumn": 10,
+                    "endLineNumber": 2,
+                    "endColumn": 25,
+                    "word": "MovieController",
+                    "x": 750.0000214843749,
+                    "y": 62.00000244140624,
+                    "hide": true,
+                    "height": 1,
+                    "width": 1
+                },
+                "id": "bb32d88c-52c1-425c-9911-fe24594b3605",
+                "startAnchor": {
+                    "x": 905.0075214814525,
+                    "y": 553.0000019531249
+                },
+                "endAnchor": {
+                    "x": 750.6575214845287,
+                    "y": 63.00000244140624
+                },
+                "startControl": {
+                    "x": 905.0075214814525,
+                    "y": 522.4784452934803
+                },
+                "endControl": {
+                    "x": 750.6575214845287,
+                    "y": 104.96714284841751
+                },
+                "arrow": {
+                    "angle": -1.5707963267948966,
+                    "x": 750.6575214845287,
+                    "y": 75.00000244140624
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "app.js",
+                    "word": "createApp",
+                    "lineNumber": 6,
+                    "startColumn": 14,
+                    "endLineNumber": 6,
+                    "endColumn": 23,
+                    "x": 1505.999931640625,
+                    "y": 662.9999755859375,
+                    "width": 69,
+                    "height": 19,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "server-with-mysql.js",
+                    "lineNumber": 1,
+                    "startColumn": 10,
+                    "endLineNumber": 1,
+                    "endColumn": 19,
+                    "word": "createApp",
+                    "x": 1474.999931640625,
+                    "y": 61.99999694824218,
+                    "hide": false,
+                    "height": 19,
+                    "width": 70
+                },
+                "id": "acbc2b57-78cc-4019-a29c-212ee7269f36",
+                "startAnchor": {
+                    "x": 1540.0178184787296,
+                    "y": 662.9999755859375
+                },
+                "endAnchor": {
+                    "x": 1510.4820448025202,
+                    "y": 80.99999694824217
+                },
+                "startControl": {
+                    "x": 1540.0178184787296,
+                    "y": 631.0411031382624
+                },
+                "endControl": {
+                    "x": 1510.4820448025202,
+                    "y": 124.94344656379542
+                },
+                "arrow": {
+                    "angle": -1.5707963267948966,
+                    "x": 1510.4820448025202,
+                    "y": 92.99999694824217
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "models\\mysql\\movie.js",
+                    "word": "moviesdb",
+                    "lineNumber": 8,
+                    "startColumn": 14,
+                    "endLineNumber": 8,
+                    "endColumn": 22,
+                    "x": 2162,
+                    "y": 194.99999694824217,
+                    "width": 62,
+                    "height": 19,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "database\\mysql-schema.sql",
+                    "lineNumber": 12,
+                    "startColumn": 5,
+                    "endLineNumber": 12,
+                    "endColumn": 13,
+                    "word": "moviesdb",
+                    "x": 2748.9999804687495,
+                    "y": 257.9999969482422,
+                    "hide": false,
+                    "height": 19,
+                    "width": 61
+                },
+                "id": "7c78fa22-10f8-4cc0-ba22-bb28370d0925",
+                "startAnchor": {
+                    "x": 2224,
+                    "y": 207.82992033279046
+                },
+                "endAnchor": {
+                    "x": 2748.9999804687495,
+                    "y": 264.2237820053802
+                },
+                "startControl": {
+                    "x": 2255.8169682150524,
+                    "y": 207.82992033279046
+                },
+                "endControl": {
+                    "x": 2705.2516491730526,
+                    "y": 264.2237820053802
+                },
+                "arrow": {
+                    "angle": 0,
+                    "x": 2736.9999804687495,
+                    "y": 264.2237820053802
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "server-with-mysql.js",
+                    "word": "movieModel",
+                    "lineNumber": 4,
+                    "startColumn": 25,
+                    "endLineNumber": 4,
+                    "endColumn": 35,
+                    "x": 1590.999931640625,
+                    "y": 118.99999694824217,
+                    "width": 77,
+                    "height": 19,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "app.js",
+                    "lineNumber": 6,
+                    "startColumn": 29,
+                    "endLineNumber": 6,
+                    "endColumn": 39,
+                    "word": "movieModel",
+                    "x": 1621.999931640625,
+                    "y": 662.9999755859375,
+                    "hide": false,
+                    "height": 19,
+                    "width": 77
+                },
+                "id": "d56b3654-c0e3-43e8-b95a-caea195e62be",
+                "startAnchor": {
+                    "x": 1630.0412919560013,
+                    "y": 137.99999694824217
+                },
+                "endAnchor": {
+                    "x": 1659.9585713252486,
+                    "y": 662.9999755859375
+                },
+                "startControl": {
+                    "x": 1630.0412919560013,
+                    "y": 169.94816596412494
+                },
+                "endControl": {
+                    "x": 1659.9585713252486,
+                    "y": 619.0712431890987
+                },
+                "arrow": {
+                    "angle": 1.5707963267948966,
+                    "x": 1659.9585713252486,
+                    "y": 650.9999755859375
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "app.js",
+                    "word": "movieModel",
+                    "lineNumber": 12,
+                    "startColumn": 42,
+                    "endLineNumber": 12,
+                    "endColumn": 52,
+                    "x": 1721.999931640625,
+                    "y": 776.9999755859375,
+                    "width": 77,
+                    "height": 19,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "routes\\movies.js",
+                    "lineNumber": 9,
+                    "startColumn": 37,
+                    "endLineNumber": 9,
+                    "endColumn": 47,
+                    "word": "movieModel",
+                    "x": 1027.0000214843749,
+                    "y": 130.00000244140625,
+                    "hide": false,
+                    "height": 19,
+                    "width": 77
+                },
+                "id": "46c10e59-f7ad-41f3-ba5a-e6548dc87862",
+                "startAnchor": {
+                    "x": 1750.2951411915697,
+                    "y": 776.9999755859375
+                },
+                "endAnchor": {
+                    "x": 1075.7048119334302,
+                    "y": 149.00000244140625
+                },
+                "startControl": {
+                    "x": 1750.2951411915697,
+                    "y": 755.1958266804825
+                },
+                "endControl": {
+                    "x": 1075.7048119334302,
+                    "y": 178.98070718640687
+                },
+                "arrow": {
+                    "angle": -1.5707963267948966,
+                    "x": 1075.7048119334302,
+                    "y": 161.00000244140625
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "routes\\movies.js",
+                    "word": "movieModel",
+                    "lineNumber": 13,
+                    "startColumn": 49,
+                    "endLineNumber": 13,
+                    "endColumn": 59,
+                    "x": 1120.0000214843749,
+                    "y": 206.00000244140625,
+                    "width": 77,
+                    "height": 19,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "controllers\\movies.js",
+                    "lineNumber": 23,
+                    "startColumn": 18,
+                    "endLineNumber": 23,
+                    "endColumn": 28,
+                    "word": "movieModel",
+                    "x": 881.0000214843749,
+                    "y": 572.0000019531249,
+                    "hide": false,
+                    "height": 19,
+                    "width": 77
+                },
+                "id": "2acced43-4e7c-493a-bac7-9e2ef3f07f04",
+                "startAnchor": {
+                    "x": 1152.2964695635303,
+                    "y": 225.00000244140625
+                },
+                "endAnchor": {
+                    "x": 925.7035734052193,
+                    "y": 572.0000019531249
+                },
+                "startControl": {
+                    "x": 1152.2964695635303,
+                    "y": 251.7933425232882
+                },
+                "endControl": {
+                    "x": 925.7035734052193,
+                    "y": 535.1591593405371
+                },
+                "arrow": {
+                    "angle": 1.5707963267948966,
+                    "x": 925.7035734052193,
+                    "y": 560.0000019531249
+                }
+            }
+        ],
+        "annotations": [],
+        "highlights": [
+            {
+                "uri": "server-with-mysql.js",
+                "lineNumber": 2,
+                "startColumn": 1,
+                "endLineNumber": 2,
+                "endColumn": 7,
+                "word": "import",
+                "id": "cf7e5782-1046-4cce-b529-4391d7caf3f9"
+            }
+        ]
+    }
+}

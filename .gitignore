@@ -20,3 +20,4 @@ pnpm-debug.log*
 # Archivos de IDEs y editores
 .vscode/
 .idea/
+.codemap
