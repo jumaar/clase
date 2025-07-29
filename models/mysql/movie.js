@@ -8,12 +8,7 @@ const config = {
   database: 'moviesdb'
 }
 
-let connection;
-
-async function createConnection() {
-  connection = await mysql.createConnection(config);
-}
-createConnection();
+const pool = mysql.createPool(config)
 // LÍNEA DE SEGUIMIENTO: EMPIEZA A LEER AQUÍ
 // PASO 1: Entendiendo el Modelo con MySQL
 // Este archivo es una de las implementaciones del MODELO. Su única responsabilidad
@@ -28,7 +23,7 @@ export class MovieModel {
       const lowerCaseGenre = genre.toLowerCase()
 
       // Obtenemos el id del género
-      const [genres] = await connection.query(
+      const [genres] = await pool.query(
         'SELECT id FROM genre WHERE LOWER(name) = ?;',
         [lowerCaseGenre]
       )
@@ -39,7 +34,7 @@ export class MovieModel {
       const [{ id }] = genres
 
       // Obtenemos todas las películas del género
-      const [movies] = await connection.query(
+      const [movies] = await pool.query(
         `SELECT BIN_TO_UUID(m.id) id, m.title, m.year, m.director, m.duration, m.poster, m.rate
          FROM movie m
          INNER JOIN movie_genres mg ON m.id = mg.movie_id
@@ -51,7 +46,7 @@ export class MovieModel {
     }
 
     // Si no hay género, obtenemos todas las películas
-    const [movies] = await connection.query(
+    const [movies] = await pool.query(
       `SELECT BIN_TO_UUID(id) id, title, year, director, duration, poster, rate
        FROM movie;`
     )
@@ -61,7 +56,7 @@ export class MovieModel {
 
   // PASO 3: Obtener una película por su ID
   static async getById ({ id }) {
-    const [movies] = await connection.query(
+    const [movies] = await pool.query(
       `SELECT BIN_TO_UUID(id) id, title, year, director, duration, poster, rate
        FROM movie WHERE id = UUID_TO_BIN(?);`,
       [id]
@@ -85,11 +80,11 @@ export class MovieModel {
     } = input
 
     // Creamos un id de tipo UUID v4
-    const [uuidResult] = await connection.query('SELECT UUID() uuid;')
+    const [uuidResult] = await pool.query('SELECT UUID() uuid;')
     const [{ uuid }] = uuidResult
 
     try {
-      await connection.query(
+      await pool.query(
         `INSERT INTO movie (id, title, year, director, duration, poster, rate)
          VALUES (UUID_TO_BIN(?), ?, ?, ?, ?, ?, ?);`,
         [uuid, title, year, director, duration, poster, rate]
@@ -102,7 +97,7 @@ export class MovieModel {
       console.log(e)
     }
 
-    const [movies] = await connection.query(
+    const [movies] = await pool.query(
       `SELECT BIN_TO_UUID(id) id, title, year, director, duration, poster, rate
        FROM movie WHERE id = UUID_TO_BIN(?);`,
       [uuid]
@@ -113,7 +108,7 @@ export class MovieModel {
 
   // PASO 5: Eliminar una película
   static async delete ({ id }) {
-    const [result] = await connection.query(
+    const [result] = await pool.query(
       'DELETE FROM movie WHERE id = UUID_TO_BIN(?);',
       [id]
     )
@@ -135,7 +130,7 @@ export class MovieModel {
       poster
     } = input
 
-    const [movies] = await connection.query(
+    const [movies] = await pool.query(
       `SELECT BIN_TO_UUID(id) id, title, year, director, duration, poster, rate
        FROM movie WHERE id = UUID_TO_BIN(?);`,
       [id]
@@ -150,7 +145,7 @@ export class MovieModel {
       ...input
     }
 
-    await connection.query(
+    await pool.query(
       `UPDATE movie
        SET title = ?, year = ?, director = ?, duration = ?, poster = ?, rate = ?
        WHERE id = UUID_TO_BIN(?);`,

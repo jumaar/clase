@@ -54,14 +54,13 @@ Siguiendo este orden, tendrás una visión completa y estructurada de cómo toda
 
 ## Cómo Empezar
 
-### Prerrequisitos
+### 1. Prerrequisitos
 
 -   Node.js (v14 o superior)
 -   npm
--   (Opcional) Un servidor de MySQL
--   (Opcional) Un servidor de MongoDB
+-   Un servidor de MySQL (si quieres usar la base de datos MySQL)
 
-### Instalación
+### 2. Instalación
 
 1.  Clona el repositorio:
     ```bash
@@ -73,43 +72,95 @@ Siguiendo este orden, tendrás una visión completa y estructurada de cómo toda
     npm install
     ```
 
-### Ejecutando la Aplicación
+### 3. Configuración de la Base de Datos MySQL
 
-Puedes ejecutar la aplicación con tres fuentes de datos diferentes:
+1.  **Inicia tu servidor de MySQL.**
+2.  **Crea la base de datos y las tablas.** El siguiente comando ejecutará el script `mysql-schema.sql`, que creará la base de datos `moviesdb` y las tablas necesarias. **Importante:** Asegúrate de que el usuario de MySQL que uses tenga permisos para crear bases de datos.
 
-**1. Con el Sistema de Archivos Local (JSON)**
-
-Esta es la forma más sencilla de ejecutar la aplicación, ya que no requiere ninguna base de datos externa.
-
-```bash
-node server-with-local.js
-```
-
-**2. Con MySQL**
-
-1.  Asegúrate de tener un servidor de MySQL en ejecución.
-2.  Ejecuta el script `database/mysql-schema.sql` para crear la base de datos y las tablas necesarias. Puedes hacerlo desde la línea de comandos:
     ```bash
+    # Reemplaza 'tu_usuario' con tu nombre de usuario de MySQL
     mysql -u tu_usuario -p < database/mysql-schema.sql
     ```
-3.  Si es necesario, ajusta la configuración de la conexión en `models/mysql/movie.js`.
-4.  Ejecuta la aplicación:
-    ```bash
-    node server-with-mysql.js
-    ```
+    Se te pedirá la contraseña de tu usuario de MySQL.
 
-**3. Con MongoDB**
+3.  **(Opcional) Configura las credenciales.** Por defecto, la aplicación intentará conectarse con el usuario `root` y la contraseña `1234`. Si necesitas cambiar esto, puedes crear un archivo `.env` en la raíz del proyecto con las siguientes variables:
 
-1.  Asegúrate de tener un servidor de MongoDB en ejecución.
-2.  Importa los datos de ejemplo a tu base de datos. El archivo `database/mongodb-import.sh` contiene el comando que necesitas ejecutar en tu terminal:
-    ```bash
-    mongoimport --uri "mongodb://localhost:27017/moviesdb" --collection movies --jsonArray --file movies.json
     ```
-3.  Si es necesario, ajusta la URI de conexión en `models/mongodb/movie.js`.
-4.  Ejecuta la aplicación:
-    ```bash
-    node server-with-mongodb.js
+    DB_HOST=localhost
+    DB_USER=tu_usuario
+    DB_PASSWORD=tu_contraseña
+    DB_NAME=moviesdb
+    DB_PORT=3306
     ```
+    La aplicación cargará estas variables automáticamente.
+
+### 4. Ejecutando la Aplicación
+
+Para iniciar la API con la conexión a MySQL, ejecuta:
+
+```bash
+node server-with-mysql.js
+```
+
+Verás un mensaje en la consola indicando que el servidor está escuchando en el puerto `1234`: `server listening on port http://localhost:1234`
+
+### 5. Usando la API
+
+Una vez que el servidor esté en marcha, puedes interactuar con la API. Aquí tienes algunos ejemplos usando `curl`:
+
+**Obtener todas las películas**
+
+```bash
+curl http://localhost:1234/movies
+```
+
+**Obtener todas las películas de un género específico**
+
+```bash
+# Reemplaza 'Action' con el género que quieras
+curl http://localhost:1234/movies?genre=Action
+```
+
+**Obtener una película por su ID**
+
+```bash
+# Reemplaza 'dcdd0fad-a94c-4810-8acc-5f108d3b18c3' con un ID de película válido
+curl http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+```
+
+**Crear una nueva película**
+
+```bash
+curl -X POST http://localhost:1234/movies \
+-H "Content-Type: application/json" \
+-d '{
+  "title": "The Matrix",
+  "year": 1999,
+  "director": "Lana Wachowski",
+  "duration": 136,
+  "poster": "https://i.ebayimg.com/images/g/Q~MAAOSw22lZzuMD/s-l1600.jpg",
+  "genre": ["Sci-Fi"],
+  "rate": 8.7
+}'
+```
+
+**Actualizar una película**
+
+```bash
+# Reemplaza 'dcdd0fad-a94c-4810-8acc-5f108d3b18c3' con el ID de la película que quieras actualizar
+curl -X PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3 \
+-H "Content-Type: application/json" \
+-d '{
+  "rate": 9.9
+}'
+```
+
+**Eliminar una película**
+
+```bash
+# Reemplaza 'dcdd0fad-a94c-4810-8acc-5f108d3b18c3' con el ID de la película que quieras eliminar
+curl -X DELETE http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+```
 
 ### Ejecutando las Pruebas
 
