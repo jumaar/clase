@@ -1,17 +1,7 @@
--- LÍNEA DE SEGUIMIENTO: EMPIEZA A LEER AQUÍ
--- PASO 1: Creando la Base de Datos y las Tablas
--- Este archivo contiene el script SQL para crear la base de datos y las tablas
--- necesarias para que la implementación de MySQL funcione.
--- Antes de ejecutar la aplicación con el modelo de MySQL, deberías ejecutar
--- este script en tu servidor de MySQL.
-
--- Creamos la base de datos si no existe
 CREATE DATABASE IF NOT EXISTS moviesdb;
 
--- Usamos la base de datos
 USE moviesdb;
 
--- Creamos la tabla de películas
 CREATE TABLE movie (
   id BINARY(16) PRIMARY KEY DEFAULT (UUID_TO_BIN(UUID())),
   title VARCHAR(255) NOT NULL,
@@ -22,20 +12,17 @@ CREATE TABLE movie (
   rate DECIMAL(2, 1) UNSIGNED NOT NULL
 );
 
--- Creamos la tabla de géneros
 CREATE TABLE genre (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(255) NOT NULL UNIQUE
 );
 
--- Creamos la tabla intermedia para la relación N:M entre películas y géneros
 CREATE TABLE movie_genres (
   movie_id BINARY(16) REFERENCES movie(id),
   genre_id INT REFERENCES genre(id),
   PRIMARY KEY (movie_id, genre_id)
 );
 
--- Insertamos algunos géneros
 INSERT INTO genre (name) VALUES
 ('Drama'),
 ('Action'),
@@ -47,7 +34,6 @@ INSERT INTO genre (name) VALUES
 ('Biography'),
 ('Fantasy');
 
--- Insertamos algunas películas de ejemplo
 INSERT INTO movie (id, title, year, director, duration, poster, rate) VALUES
 (UUID_TO_BIN(UUID()), 'The Shawshank Redemption', 1994, 'Frank Darabont', 142, 'https://i.ebayimg.com/images/g/4goAAOSwMyBe7hnQ/s-l1200.webp', 9.3),
 (UUID_TO_BIN(UUID()), 'The Dark Knight', 2008, 'Christopher Nolan', 152, 'https://i.ebayimg.com/images/g/yokAAOSw8w1YARbm/s-l1200.jpg', 9.0),
@@ -55,7 +41,6 @@ INSERT INTO movie (id, title, year, director, duration, poster, rate) VALUES
 (UUID_TO_BIN(UUID()), 'Pulp Fiction', 1994, 'Quentin Tarantino', 154, 'https://www.themoviedb.org/t/p/original/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg', 8.9),
 (UUID_TO_BIN(UUID()), 'Forrest Gump', 1994, 'Robert Zemeckis', 142, 'https://i.ebayimg.com/images/g/qR8AAOSwkvRZzuMD/s-l1600.jpg', 8.8);
 
--- Insertamos las relaciones entre películas y géneros
 INSERT INTO movie_genres (movie_id, genre_id)
 SELECT
   m.id, g.id
@@ -67,8 +52,3 @@ JOIN genre g ON
   (m.title = 'Pulp Fiction' AND g.name IN ('Crime', 'Drama')) OR
   (m.title = 'Forrest Gump' AND g.name IN ('Drama', 'Romance'));
 
--- LÍNEA DE SEGUIMIENTO: FIN DE LA LECTURA
--- Una vez que hayas ejecutado este script, puedes volver a intentar ejecutar la aplicación.
--- Ahora debería poder conectarse a la base de datos y obtener los datos.
--- Para ejecutar este script, puedes usar un cliente de MySQL como MySQL Workbench
--- o la línea de comandos: `mysql -u root -p < database/mysql-schema.sql`
