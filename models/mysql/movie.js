@@ -8,8 +8,12 @@ const config = {
   database: 'moviesdb'
 }
 
-const connection = await mysql.createConnection(config)
+let connection;
 
+async function createConnection() {
+  connection = await mysql.createConnection(config);
+}
+createConnection();
 // LÍNEA DE SEGUIMIENTO: EMPIEZA A LEER AQUÍ
 // PASO 1: Entendiendo el Modelo con MySQL
 // Este archivo es una de las implementaciones del MODELO. Su única responsabilidad
