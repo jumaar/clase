@@ -29,14 +29,14 @@
                         "viewState": {
                             "scrollLeft": 0,
                             "firstPosition": {
-                                "lineNumber": 1,
+                                "lineNumber": 3,
                                 "column": 1
                             },
-                            "firstPositionDeltaTop": 0
+                            "firstPositionDeltaTop": -7
                         },
                         "contributionsState": {
                             "editor.contrib.folding": {
-                                "lineCount": 75,
+                                "lineCount": 55,
                                 "provider": "syntax",
                                 "foldedImports": false
                             },
@@ -82,8 +82,7 @@
                         },
                         "contributionsState": {
                             "editor.contrib.folding": {
-                                "lineCount": 174,
-                                "provider": "syntax",
+                                "lineCount": 173,
                                 "foldedImports": false
                             },
                             "editor.contrib.wordHighlighter": false
@@ -220,7 +219,7 @@
                         },
                         "contributionsState": {
                             "editor.contrib.folding": {
-                                "lineCount": 11,
+                                "lineCount": 13,
                                 "foldedImports": false
                             },
                             "editor.contrib.wordHighlighter": false
@@ -316,7 +315,6 @@
                         "contributionsState": {
                             "editor.contrib.folding": {
                                 "lineCount": 29,
-                                "provider": "syntax",
                                 "foldedImports": false
                             },
                             "editor.contrib.wordHighlighter": false
@@ -356,10 +354,10 @@
                         "viewState": {
                             "scrollLeft": 0,
                             "firstPosition": {
-                                "lineNumber": 14,
+                                "lineNumber": 7,
                                 "column": 1
                             },
-                            "firstPositionDeltaTop": -18
+                            "firstPositionDeltaTop": -16
                         },
                         "contributionsState": {
                             "editor.contrib.folding": {
@@ -390,32 +388,32 @@
                     "innerWidgetState": {
                         "cursorState": [
                             {
-                                "inSelectionMode": true,
+                                "inSelectionMode": false,
                                 "selectionStart": {
-                                    "lineNumber": 28,
-                                    "column": 17
+                                    "lineNumber": 17,
+                                    "column": 28
                                 },
                                 "position": {
-                                    "lineNumber": 28,
-                                    "column": 37
+                                    "lineNumber": 17,
+                                    "column": 28
                                 }
                             }
                         ],
                         "viewState": {
                             "scrollLeft": 0,
                             "firstPosition": {
-                                "lineNumber": 1,
+                                "lineNumber": 12,
                                 "column": 1
                             },
-                            "firstPositionDeltaTop": 0
+                            "firstPositionDeltaTop": -16
                         },
                         "contributionsState": {
                             "editor.contrib.folding": {
-                                "lineCount": 31,
+                                "lineCount": 20,
                                 "provider": "syntax",
                                 "foldedImports": false
                             },
-                            "editor.contrib.wordHighlighter": true
+                            "editor.contrib.wordHighlighter": false
                         }
                     }
                 },
@@ -443,8 +441,8 @@
                     "startColumn": 14,
                     "endLineNumber": 9,
                     "endColumn": 31,
-                    "x": 2161.999989906459,
-                    "y": 213.9999967936791,
+                    "x": 2162,
+                    "y": 214,
                     "width": 131,
                     "height": 19,
                     "hide": false
@@ -464,24 +462,24 @@
                 },
                 "id": "d7530104-12c6-4591-b48a-5cc1f571c418",
                 "startAnchor": {
-                    "x": 2178.4285593209142,
-                    "y": 213.9999967936791
+                    "x": 2178.428569876486,
+                    "y": 214
                 },
                 "endAnchor": {
-                    "x": 1589.5713831972025,
+                    "x": 1589.5713827351717,
                     "y": 99.9999950325086
                 },
                 "startControl": {
-                    "x": 2178.4285593209142,
-                    "y": 207.91787412703906
+                    "x": 2178.428569876486,
+                    "y": 207.91787727816262
                 },
                 "endControl": {
-                    "x": 1589.5713831972025,
-                    "y": 108.36291369913866
+                    "x": 1589.5713827351717,
+                    "y": 108.362913775035
                 },
                 "arrow": {
                     "angle": -1.5707963267948966,
-                    "x": 1589.5713831972025,
+                    "x": 1589.5713827351717,
                     "y": 111.9999950325086
                 }
             },
@@ -587,114 +585,14 @@
             },
             {
                 "startWord": {
-                    "uri": "schemas\\movies.js",
-                    "word": "validateMovie",
-                    "lineNumber": 24,
-                    "startColumn": 17,
-                    "endLineNumber": 24,
-                    "endColumn": 30,
-                    "x": 3373.999753812983,
-                    "y": 479.9999952972912,
-                    "width": 1,
-                    "height": 1,
-                    "hide": true
-                },
-                "endWord": {
-                    "uri": "controllers\\movies.js",
-                    "lineNumber": 13,
-                    "startColumn": 10,
-                    "endLineNumber": 13,
-                    "endColumn": 23,
-                    "word": "validateMovie",
-                    "x": 2717.999879304125,
-                    "y": 61.9999967936791,
-                    "hide": true,
-                    "height": 1,
-                    "width": 1
-                },
-                "id": "866042a9-846d-4591-81c8-14d5c141e40d",
-                "startAnchor": {
-                    "x": 3373.999753812983,
-                    "y": 480.1813976765092
-                },
-                "endAnchor": {
-                    "x": 2718.999879304125,
-                    "y": 62.81859441446105
-                },
-                "startControl": {
-                    "x": 3347.01275607616,
-                    "y": 480.1813976765092
-                },
-                "endControl": {
-                    "x": 2756.107001192257,
-                    "y": 62.81859441446105
-                },
-                "arrow": {
-                    "angle": 3.141592653589793,
-                    "x": 2730.999879304125,
-                    "y": 62.81859441446105
-                }
-            },
-            {
-                "startWord": {
-                    "uri": "schemas\\movies.js",
-                    "word": "validatePartialMovie",
-                    "lineNumber": 28,
-                    "startColumn": 17,
-                    "endLineNumber": 28,
-                    "endColumn": 37,
-                    "x": 3373.999753812983,
-                    "y": 479.9999952972912,
-                    "width": 1,
-                    "height": 1,
-                    "hide": true
-                },
-                "endWord": {
-                    "uri": "controllers\\movies.js",
-                    "lineNumber": 13,
-                    "startColumn": 25,
-                    "endLineNumber": 13,
-                    "endColumn": 45,
-                    "word": "validatePartialMovie",
-                    "x": 2717.999879304125,
-                    "y": 61.9999967936791,
-                    "hide": true,
-                    "height": 1,
-                    "width": 1
-                },
-                "id": "8a20ac59-ead6-4945-9257-60ebc64f1050",
-                "startAnchor": {
-                    "x": 3373.999753812983,
-                    "y": 480.1813976765092
-                },
-                "endAnchor": {
-                    "x": 2718.999879304125,
-                    "y": 62.81859441446105
-                },
-                "startControl": {
-                    "x": 3347.01275607616,
-                    "y": 480.1813976765092
-                },
-                "endControl": {
-                    "x": 2756.107001192257,
-                    "y": 62.81859441446105
-                },
-                "arrow": {
-                    "angle": 3.141592653589793,
-                    "x": 2730.999879304125,
-                    "y": 62.81859441446105
-                }
-            },
-            {
-                "startWord": {
                     "uri": "controllers\\movies.js",
                     "word": "MovieController",
                     "lineNumber": 22,
                     "startColumn": 14,
                     "endLineNumber": 22,
                     "endColumn": 29,
-                    "x": 2817.999879304125,
-                    "y": 195.9999967936791,
+                    "x": 2817.9999065074066,
+                    "y": 331.0000010052799,
                     "width": 116,
                     "height": 19,
                     "hide": false
@@ -706,33 +604,33 @@
                     "endLineNumber": 2,
                     "endColumn": 25,
                     "word": "MovieController",
-                    "x": 2130.999989906459,
-                    "y": 80.9999967936791,
+                    "x": 2131,
+                    "y": 81,
                     "hide": false,
                     "height": 19,
                     "width": 116
                 },
                 "id": "bb32d88c-52c1-425c-9911-fe24594b3605",
                 "startAnchor": {
-                    "x": 2819.2477145277962,
-                    "y": 195.9999967936791
+                    "x": 2849.8939101651004,
+                    "y": 331.0000010052799
                 },
                 "endAnchor": {
-                    "x": 2245.752154682788,
-                    "y": 99.9999967936791
+                    "x": 2215.1059963423063,
+                    "y": 100
                 },
                 "startControl": {
-                    "x": 2819.2477145277962,
-                    "y": 190.71688043635496
+                    "x": 2849.8939101651004,
+                    "y": 320.0571929751926
                 },
                 "endControl": {
-                    "x": 2245.752154682788,
-                    "y": 107.2642817849998
+                    "x": 2215.1059963423063,
+                    "y": 115.04636104137
                 },
                 "arrow": {
                     "angle": -1.5707963267948966,
-                    "x": 2245.752154682788,
-                    "y": 111.9999967936791
+                    "x": 2215.1059963423063,
+                    "y": 112
                 }
             },
             {
@@ -743,8 +641,8 @@
                     "startColumn": 14,
                     "endLineNumber": 8,
                     "endColumn": 22,
-                    "x": 93.99999816894531,
-                    "y": 567.9999755859375,
+                    "x": 94,
+                    "y": 568,
                     "width": 1,
                     "height": 1,
                     "hide": true
@@ -756,33 +654,33 @@
                     "endLineNumber": 12,
                     "endColumn": 13,
                     "word": "moviesdb",
-                    "x": 124.99999816894531,
-                    "y": 270.9999969482422,
+                    "x": 125.00000052938262,
+                    "y": 226.0000001700377,
                     "hide": false,
                     "height": 19,
-                    "width": 61.000000000000014
+                    "width": 61
                 },
                 "id": "7c78fa22-10f8-4cc0-ba22-bb28370d0925",
                 "startAnchor": {
-                    "x": 94.60590095457839,
-                    "y": 567.9999755859375
+                    "x": 94.59159159243323,
+                    "y": 568
                 },
                 "endAnchor": {
-                    "x": 153.48784524191677,
-                    "y": 289.9999969482422
+                    "x": 153.75976027315127,
+                    "y": 245.0000001700377
                 },
                 "startControl": {
-                    "x": 94.60590095457839,
-                    "y": 536.6944792297708
+                    "x": 94.59159159243323,
+                    "y": 536.5237522179469
                 },
                 "endControl": {
-                    "x": 153.48784524191677,
-                    "y": 333.0450544379714
+                    "x": 153.75976027315127,
+                    "y": 288.27984087036066
                 },
                 "arrow": {
                     "angle": -1.5707963267948966,
-                    "x": 153.48784524191677,
-                    "y": 301.9999969482422
+                    "x": 153.75976027315127,
+                    "y": 257.0000001700377
                 }
             },
             {
@@ -806,8 +704,8 @@
                     "endLineNumber": 9,
                     "endColumn": 47,
                     "word": "movieModel",
-                    "x": 2338.999989906459,
-                    "y": 213.9999967936791,
+                    "x": 2339,
+                    "y": 214,
                     "hide": false,
                     "height": 19,
                     "width": 77
@@ -815,24 +713,24 @@
                 "id": "46c10e59-f7ad-41f3-ba5a-e6548dc87862",
                 "startAnchor": {
                     "x": 1798.9999526116578,
-                    "y": 276.9432692633878
+                    "y": 276.9432695216427
                 },
                 "endAnchor": {
-                    "x": 2338.999989906459,
-                    "y": 227.0567225627999
+                    "x": 2339,
+                    "y": 227.0567255108659
                 },
                 "startControl": {
-                    "x": 1830.864268114564,
-                    "y": 276.9432692633878
+                    "x": 1830.8642681341432,
+                    "y": 276.9432695216427
                 },
                 "endControl": {
-                    "x": 2295.186556089963,
-                    "y": 227.0567225627999
+                    "x": 2295.1865661565826,
+                    "y": 227.0567255108659
                 },
                 "arrow": {
                     "angle": 0,
-                    "x": 2326.999989906459,
-                    "y": 227.0567225627999
+                    "x": 2327,
+                    "y": 227.0567255108659
                 }
             },
             {
@@ -843,8 +741,8 @@
                     "startColumn": 49,
                     "endLineNumber": 13,
                     "endColumn": 59,
-                    "x": 2431.999989906459,
-                    "y": 289.9999967936791,
+                    "x": 2432,
+                    "y": 290,
                     "width": 77,
                     "height": 19,
                     "hide": false
@@ -856,33 +754,33 @@
                     "endLineNumber": 23,
                     "endColumn": 28,
                     "word": "movieModel",
-                    "x": 2848.999879304125,
-                    "y": 214.9999967936791,
+                    "x": 2848.9999065074066,
+                    "y": 350.0000010052799,
                     "hide": false,
                     "height": 19,
                     "width": 77
                 },
                 "id": "2acced43-4e7c-493a-bac7-9e2ef3f07f04",
                 "startAnchor": {
-                    "x": 2508.999989906459,
-                    "y": 292.5755345254256
+                    "x": 2509,
+                    "y": 305.0395696801247
                 },
                 "endAnchor": {
-                    "x": 2848.999879304125,
-                    "y": 231.42445906193254
+                    "x": 2848.9999065074066,
+                    "y": 353.9604313251552
                 },
                 "startControl": {
-                    "x": 2540.4946457960045,
-                    "y": 292.5755345254256
+                    "x": 2540.673810196294,
+                    "y": 305.0395696801247
                 },
                 "endControl": {
-                    "x": 2805.694727456,
-                    "y": 231.42445906193254
+                    "x": 2805.4484174875024,
+                    "y": 353.9604313251552
                 },
                 "arrow": {
                     "angle": 0,
-                    "x": 2836.999879304125,
-                    "y": 231.42445906193254
+                    "x": 2836.9999065074066,
+                    "y": 353.9604313251552
                 }
             },
             {
@@ -893,9 +791,9 @@
                     "startColumn": 14,
                     "endLineNumber": 19,
                     "endColumn": 24,
-                    "x": 193.9999981689453,
-                    "y": 723.9999755859375,
-                    "width": 77,
+                    "x": 195,
+                    "y": 724,
+                    "width": 78,
                     "height": 19,
                     "hide": false
                 },
@@ -914,24 +812,24 @@
                 },
                 "id": "f382218a-94ec-4a2c-af58-036dd88f0f45",
                 "startAnchor": {
-                    "x": 251.94348598884824,
-                    "y": 742.9999755859375
+                    "x": 253.40847665847667,
+                    "y": 743
                 },
                 "endAnchor": {
-                    "x": 1046.0565121800971,
+                    "x": 1046.0915233415233,
                     "y": 1131
                 },
                 "startControl": {
-                    "x": 251.94348598884824,
-                    "y": 757.0478904653003
+                    "x": 253.40847665847667,
+                    "y": 757.0683616775771
                 },
                 "endControl": {
-                    "x": 1046.0565121800971,
-                    "y": 1111.6841170408761
+                    "x": 1046.0915233415233,
+                    "y": 1111.6560026933316
                 },
                 "arrow": {
                     "angle": 1.5707963267948966,
-                    "x": 1046.0565121800971,
+                    "x": 1046.0915233415233,
                     "y": 1119
                 }
             },
@@ -983,6 +881,106 @@
                     "angle": 1.5707963267948966,
                     "x": 883.4715087450344,
                     "y": 1119
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "schemas\\movies.js",
+                    "word": "validateMovie",
+                    "lineNumber": 13,
+                    "startColumn": 17,
+                    "endLineNumber": 13,
+                    "endColumn": 30,
+                    "x": 3496.999865861777,
+                    "y": 65.00000100527987,
+                    "width": 100,
+                    "height": 19,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "controllers\\movies.js",
+                    "lineNumber": 13,
+                    "startColumn": 10,
+                    "endLineNumber": 13,
+                    "endColumn": 23,
+                    "word": "validateMovie",
+                    "x": 2786.9999065074066,
+                    "y": 160.00000100527987,
+                    "hide": false,
+                    "height": 19,
+                    "width": 100
+                },
+                "id": "9e322a38-b6d2-43d9-97d1-c6926fa9f893",
+                "startAnchor": {
+                    "x": 3496.999865861777,
+                    "y": 81.19014223334325
+                },
+                "endAnchor": {
+                    "x": 2886.9999065074066,
+                    "y": 162.80985977721647
+                },
+                "startControl": {
+                    "x": 3465.2825272019086,
+                    "y": 81.19014223334325
+                },
+                "endControl": {
+                    "x": 2930.6112471647257,
+                    "y": 162.80985977721647
+                },
+                "arrow": {
+                    "angle": 3.141592653589793,
+                    "x": 2898.9999065074066,
+                    "y": 162.80985977721647
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "schemas\\movies.js",
+                    "word": "validatePartialMovie",
+                    "lineNumber": 17,
+                    "startColumn": 17,
+                    "endLineNumber": 17,
+                    "endColumn": 37,
+                    "x": 3496.999865861777,
+                    "y": 141.00000100527987,
+                    "width": 154,
+                    "height": 19,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "controllers\\movies.js",
+                    "lineNumber": 13,
+                    "startColumn": 25,
+                    "endLineNumber": 13,
+                    "endColumn": 45,
+                    "word": "validatePartialMovie",
+                    "x": 2902.9999065074066,
+                    "y": 160.00000100527987,
+                    "hide": false,
+                    "height": 19,
+                    "width": 154
+                },
+                "id": "ca97f8fd-24de-47e6-8a97-cb477b8040fb",
+                "startAnchor": {
+                    "x": 3496.999865861777,
+                    "y": 152.96296413677598
+                },
+                "endAnchor": {
+                    "x": 3056.9999065074066,
+                    "y": 167.03703787378376
+                },
+                "startControl": {
+                    "x": 3465.016223524629,
+                    "y": 152.96296413677598
+                },
+                "endControl": {
+                    "x": 3100.977414720985,
+                    "y": 167.03703787378376
+                },
+                "arrow": {
+                    "angle": 3.141592653589793,
+                    "x": 3068.9999065074066,
+                    "y": 167.03703787378376
                 }
             }
         ],
