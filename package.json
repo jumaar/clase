@@ -5,20 +5,24 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "mysql": "node --watch server-with-mysql.js",
+    "local": "node --watch server-with-local.js",
+    "mongodb": "node --watch server-with-mongodb.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "2.8.5",
+    "dotenv": "17.2.1",
     "express": "4.18.2",
     "mongodb": "5.7.0",
-    "mysql2": "^3.14.2",
+    "mysql2": "3.14.2",
     "zod": "3.21.4"
   },
   "devDependencies": {
-    "mocha": "^11.7.1",
-    "supertest": "^7.1.4"
+    "mocha": "11.7.1",
+    "supertest": "7.1.4"
   }
 }

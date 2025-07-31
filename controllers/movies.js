@@ -1,23 +1,4 @@
-// CÍRCULO 2: EL CONTROLADOR (El cocinero del restaurante)
-// Este es el controlador. Es el CEREBRO de la aplicación, el COCINERO del restaurante.
-// Recibe los pedidos del camarero (enrutador) y sabe qué hacer. No almacena los ingredientes,
-// pero sabe cómo pedirlos a la despensa (el modelo) y cómo prepararlos.
-
-// ¡IMPORTANTE! Fíjate en la inyección de dependencias.
-// El controlador no sabe (¡ni le importa!) de dónde vienen los datos.
-// Podría ser un archivo JSON, una base de datos MySQL, MongoDB, etc.
-// Simplemente usa `MovieModel`, que es una abstracción.
-// Esta es la "inyección de dependencias": le "inyectamos" el modelo que queramos usar.
-// Así, si mañana queremos cambiar de base de datos, solo cambiamos el modelo
-// y el controlador sigue funcionando igual.
 import { validateMovie, validatePartialMovie } from '../schemas/movies.js'
-
-// LÍNEA DE SEGUIMIENTO: EMPIEZA A LEER AQUÍ
-// PASO 1: Modificando el Controlador para la Inyección de Dependencias
-// Fíjate en el gran cambio: ya no importamos `MovieModel` directamente.
-// En su lugar, vamos a recibirlo como un parámetro en el constructor.
-// Esto hace que el controlador sea completamente agnóstico a la fuente de datos.
-// No sabe si los datos vienen de un archivo, de MySQL o de MongoDB.
 
 export class MovieController {
   constructor ({ movieModel }) {
