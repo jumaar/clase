@@ -98,5 +98,3 @@ export class MovieModel {
     return result
   }
 }
-
-// mongoimport --uri "mongodb+srv://juanbitcoin988:peliculas988@clusterpeliculas.en0fstl.mongodb.net/moviesdb" --collection movies --file "D:\Desktop\GITHUB jumaar\clase\movies.json" --jsonArray
